@@ -265,16 +265,16 @@ TO CHANGE COLOR:
 14. PROFILE PHOTO
 ================================================================================
 
-FILE NAME: profile.jpg
+FILE NAME: profile.png
 LOCATION: Same directory as HTML files
 DIMENSIONS: 180x180 pixels (recommended)
 FORMAT: JPG or PNG
-HOW TO USE: Simply upload profile.jpg to your repository
+HOW TO USE: Simply upload profile.png to your repository
             Automatically appears in index.html
 
 TO REPLACE PHOTO:
-1. Delete old profile.jpg
-2. Upload new profile.jpg with exact same name
+1. Delete old profile.png
+2. Upload new profile.png with exact same name
 3. Website automatically displays new photo
 
 ================================================================================
@@ -316,7 +316,7 @@ Change research interests      index.html lines 503-515
 Add course you teach           index.html lines 612-642
 Update award                   index.html lines 651-685
 Change institution             index.html lines ~368-370
-Update profile photo           Upload profile.jpg to repository
+Update profile photo           Upload profile.png to repository
 Change primary color           Any HTML file, search #0066cc
 Add research project           projects.html (find Active section)
 Modify social profiles         index.html lines 380-385
@@ -328,7 +328,7 @@ Modify social profiles         index.html lines 380-385
 BEFORE UPLOADING:
 1. Create folder on your computer
 2. Download all HTML files
-3. Save your profile photo as profile.jpg
+3. Save your profile photo as profile.png
 4. Place all in same folder
 5. Upload entire folder contents to GitHub
 
@@ -337,7 +337,7 @@ FILE CHECKLIST:
 □ publications.html
 □ team.html
 □ projects.html
-□ profile.jpg
+□ profile.png
 □ README.md
 
 NO SUBFOLDERS NEEDED - All files in root directory
@@ -386,7 +386,7 @@ Q: Site not showing?
 A: Wait 5 minutes, then refresh browser and clear cache
 
 Q: Image not showing?
-A: Make sure file is named exactly "profile.jpg"
+A: Make sure file is named exactly "profile.png"
 
 Q: Links broken?
 A: Use full URLs starting with https://

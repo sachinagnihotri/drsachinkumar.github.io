@@ -1,0 +1,416 @@
+================================================================================
+QUICK CUSTOMIZATION GUIDE - Academic Profile Website
+================================================================================
+
+This guide shows you exactly where to find and edit key information.
+
+================================================================================
+1. PROFILE INFORMATION (index.html)
+================================================================================
+
+LOCATION: Lines 360-395 (Profile Section)
+
+WHAT TO CHANGE:
+- Full name:     <h1>Dr. Sachin Kumar</h1>
+- Job title:     Associate Professor
+- Department:    Computer Science
+- College:       Akian College of Science and Engineering
+- University:    American University of Armenia
+- Address:       40 Marshal Baghramyan, Yerevan, 0019
+- Office:        334W/PAB
+- Phone:         +374 55254128
+- Email:         s.kumar@aua.am
+
+SEARCH TERMS to find these quickly:
+- "Dr. Sachin Kumar" - Main name
+- "Associate Professor" - Title
+- "s.kumar@aua.am" - Email
+- "+374 55254128" - Phone
+
+================================================================================
+2. SOCIAL LINKS & PROFILES (index.html)
+================================================================================
+
+LOCATION: Lines 380-385
+
+LINKS TO UPDATE:
+1. Google Scholar: https://scholar.google.co.in/citations?user=FtQHB6kAAAAJ&hl=en
+   CHANGE TO: Your Google Scholar URL
+
+2. Scopus: https://www.scopus.com/authid/detail.uri?authorId=57199513131
+   CHANGE TO: Your Scopus profile URL
+
+3. LinkedIn: https://www.linkedin.com/in/dr-sachin-kumar-2150a461
+   CHANGE TO: Your LinkedIn profile
+
+4. Institutional Page: https://people.aua.am/team_member/sachin-kumar-phd/
+   CHANGE TO: Your university profile URL
+
+HOW TO EDIT:
+Find this pattern:
+    <a href="PASTE_YOUR_URL_HERE" target="_blank">Link Name</a>
+
+Replace PASTE_YOUR_URL_HERE with your actual URL
+
+================================================================================
+3. RESEARCH INTERESTS (index.html)
+================================================================================
+
+LOCATION: Lines 503-515
+
+CURRENT TOPICS:
+- Business Analytics
+- Financial Data Analysis
+- Smart Healthcare
+- Cognitive Science
+- Quantum Machine Learning
+- Multi-modal Medical Diagnosis
+- Natural Language Processing
+
+HOW TO EDIT:
+Find <section id="research"> and the <ul> list
+Replace each <li> with your research interests
+Example: <li><strong>Your Topic:</strong> Your description</li>
+
+================================================================================
+4. EMPLOYMENT HISTORY (index.html)
+================================================================================
+
+LOCATION: Lines 524-572
+
+Each position has this format:
+    <div class="experience-item">
+        <div class="position">Job Title</div>
+        <div class="institution">Institution Name</div>
+        <div class="period">Date Range</div>
+    </div>
+
+TO ADD NEW POSITION:
+Copy entire <div class="experience-item">...</div> block
+Paste above or below existing positions
+Update all text inside
+
+TO REMOVE POSITION:
+Delete entire <div class="experience-item">...</div> block
+
+================================================================================
+5. EDUCATION (index.html)
+================================================================================
+
+LOCATION: Lines 580-603
+
+Same format as employment. Edit degrees, institutions, and dates.
+
+EXAMPLE:
+    <div class="position">Doctor of Philosophy (Ph.D.) in Data Mining</div>
+    <div class="institution">Your University Name</div>
+    <div class="period">Year - Year | Additional Info</div>
+
+================================================================================
+6. NEWS SECTION (index.html)
+================================================================================
+
+LOCATION: Lines 444-473
+
+CURRENT NEWS ITEMS:
+    <div class="news-item">
+        <div class="news-date">Feb 2026</div>
+        <p>Your news text here</p>
+    </div>
+
+TO ADD NEWS:
+Copy entire <div class="news-item">...</div> block
+Update the date and description
+Most recent news should go FIRST
+
+TO REMOVE OLD NEWS:
+Delete the entire <div class="news-item">...</div> block
+
+================================================================================
+7. COURSES TAUGHT (index.html)
+================================================================================
+
+LOCATION: Lines 612-642
+
+CURRENT COURSES FORMAT:
+    <div class="course-item">
+        <div class="title">Course Name</div>
+        <div class="institution">Level | Institution</div>
+        <p style="margin-top: 8px; margin-bottom: 0;">Description</p>
+    </div>
+
+TO EDIT:
+Update course names, levels, and descriptions
+Add new courses by copying the entire block
+Remove courses by deleting the block
+
+================================================================================
+8. AWARDS & RECOGNITION (index.html)
+================================================================================
+
+LOCATION: Lines 651-685
+
+FORMAT:
+    <div class="award-item">
+        <div class="title">Award Name</div>
+        <div class="institution">Awarding Organization</div>
+        <div class="period">Year or Date Range</div>
+    </div>
+
+TO ADD AWARD:
+Copy entire <div class="award-item">...</div> block
+Update award name, organization, and date
+Insert in reverse chronological order (newest first)
+
+================================================================================
+9. PUBLICATIONS (publications.html)
+================================================================================
+
+LOCATION: Throughout file, organized by year
+
+FORMAT FOR EACH PUBLICATION:
+    <div class="publication">
+        <div class="pub-title">1. Paper Title Here</div>
+        <div class="pub-authors">Author, Author, Author</div>
+        <div class="pub-info">Journal/Conference Name, Year</div>
+        <div class="pub-link"><a href="PASTE_DOI_URL" target="_blank">DOI: link</a></div>
+    </div>
+
+TO ADD PUBLICATION:
+1. Find the year section where publication belongs
+2. Copy entire <div class="publication">...</div> block
+3. Update title, authors, journal/conference, and DOI
+4. Place in chronological order within that year (newest first)
+5. Update the number in <div class="pub-title"> (1, 2, 3, etc.)
+
+TO REMOVE PUBLICATION:
+Delete entire <div class="publication">...</div> block
+
+================================================================================
+10. TEAM MEMBERS (team.html)
+================================================================================
+
+LOCATION: Team members section throughout file
+
+FORMAT:
+    <div class="team-member">
+        <div class="member-name">Name</div>
+        <div class="member-role">Position/Status</div>
+        <div class="member-project">Project description</div>
+        <div class="member-project">Period: Years</div>
+        <div class="member-outcome">Result/Outcome</div>
+    </div>
+
+TO ADD TEAM MEMBER:
+Copy entire <div class="team-member">...</div> block
+Update all information
+Place in appropriate section (Postdocs, Graduate, etc.)
+
+================================================================================
+11. RESEARCH PROJECTS (projects.html)
+================================================================================
+
+LOCATION: Active projects and grants sections
+
+FORMAT:
+    <div class="project">
+        <div class="project-title">Project Name</div>
+        <div class="project-info">Lead info | Timeline</div>
+        <div class="project-description">Description text</div>
+        [optional highlights and grant info]
+    </div>
+
+TO ADD PROJECT:
+Copy entire <div class="project">...</div> block
+Fill in project details
+Add to appropriate section
+
+================================================================================
+12. FOOTER & META INFORMATION
+================================================================================
+
+LOCATION: Bottom of every HTML file
+
+FOOTER TEXT:
+Change: <p>&copy; 2025 Dr. Sachin Kumar. All rights reserved.</p>
+To: <p>&copy; [YEAR] [YOUR NAME]. All rights reserved.</p>
+
+PAGE TITLE (in <head>):
+Change: <title>Dr. Sachin Kumar - Associate Professor</title>
+To: <title>[YOUR NAME] - [YOUR TITLE]</title>
+
+================================================================================
+13. COLOR CUSTOMIZATION
+================================================================================
+
+PRIMARY BLUE (used for headings, links, accents):
+Current: #0066cc
+Location: Multiple <style> sections, search for "0066cc"
+Change: Replace all #0066cc with your preferred color hex code
+
+EXAMPLES OF COLORS:
+- Dark Blue: #003366
+- Professional Green: #0d6438
+- Academic Red: #8b1a1a
+- Modern Gray: #2c3e50
+
+TO CHANGE COLOR:
+1. Open each HTML file
+2. Find <style> section near top
+3. Search for #0066cc
+4. Replace with your color code
+5. Repeat for all files (or some might inherit from main)
+
+================================================================================
+14. PROFILE PHOTO
+================================================================================
+
+FILE NAME: profile.jpg
+LOCATION: Same directory as HTML files
+DIMENSIONS: 180x180 pixels (recommended)
+FORMAT: JPG or PNG
+HOW TO USE: Simply upload profile.jpg to your repository
+            Automatically appears in index.html
+
+TO REPLACE PHOTO:
+1. Delete old profile.jpg
+2. Upload new profile.jpg with exact same name
+3. Website automatically displays new photo
+
+================================================================================
+15. QUICK EDITS CHECKLIST
+================================================================================
+
+Before publishing, update these essential items:
+
+[ ] Name and title in index.html
+[ ] Email address (all files)
+[ ] Phone number
+[ ] Institution and address
+[ ] Google Scholar and Scopus profile links
+[ ] Research interests
+[ ] Employment history (remove old positions)
+[ ] Current education if applicable
+[ ] Courses being taught
+[ ] Current awards (remove very old ones)
+[ ] Recent publications (add 2025/2026 work)
+[ ] Current team members
+[ ] Active research projects
+[ ] Profile photo (profile.jpg)
+[ ] Footer year updated to current year
+[ ] All links tested and working
+[ ] Spelling and grammar checked
+
+================================================================================
+16. COMMON EDITS & WHERE TO FIND THEM
+================================================================================
+
+NEED TO...                      LOCATION
+Change your name                index.html line ~365
+Add email address              index.html line ~372
+Update job title               index.html line ~366
+Add new publication            publications.html (find year section)
+Add current student            team.html (find Graduate section)
+Update news                    index.html lines 444-473
+Change research interests      index.html lines 503-515
+Add course you teach           index.html lines 612-642
+Update award                   index.html lines 651-685
+Change institution             index.html lines ~368-370
+Update profile photo           Upload profile.jpg to repository
+Change primary color           Any HTML file, search #0066cc
+Add research project           projects.html (find Active section)
+Modify social profiles         index.html lines 380-385
+
+================================================================================
+17. FILE ORGANIZATION TIPS
+================================================================================
+
+BEFORE UPLOADING:
+1. Create folder on your computer
+2. Download all HTML files
+3. Save your profile photo as profile.jpg
+4. Place all in same folder
+5. Upload entire folder contents to GitHub
+
+FILE CHECKLIST:
+□ index.html
+□ publications.html
+□ team.html
+□ projects.html
+□ profile.jpg
+□ README.md
+
+NO SUBFOLDERS NEEDED - All files in root directory
+
+================================================================================
+18. TESTING BEFORE PUBLISHING
+================================================================================
+
+THINGS TO CHECK:
+1. All links work (click every link)
+2. Profile photo appears
+3. Text is correct (no old info)
+4. Navigation works (all pages link correctly)
+5. View on mobile phone (use browser dev tools)
+6. Check spelling throughout
+7. Verify all years are current
+8. Test on different browsers (Chrome, Firefox, Safari)
+
+================================================================================
+19. AFTER PUBLISHING
+================================================================================
+
+YOUR SITE IS LIVE AT:
+https://yourusername.github.io
+
+KEEP UPDATED:
+- Add news quarterly
+- Update publications as published
+- Add new students/postdocs
+- Keep news section fresh
+- Annual review of all content
+
+UPDATES TO GITHUB:
+1. Edit file on GitHub (click pencil icon)
+2. Make changes
+3. Commit with description
+4. Site updates automatically within 5 minutes
+
+================================================================================
+NEED HELP?
+================================================================================
+
+COMMON ISSUES:
+
+Q: Site not showing?
+A: Wait 5 minutes, then refresh browser and clear cache
+
+Q: Image not showing?
+A: Make sure file is named exactly "profile.jpg"
+
+Q: Links broken?
+A: Use full URLs starting with https://
+
+Q: Formatting looks wrong?
+A: Check browser developer tools (F12) for errors
+
+Q: Can't find section to edit?
+A: Use Ctrl+F to search for specific text
+
+================================================================================
+HELPFUL RESOURCES
+================================================================================
+
+HTML Reference: https://www.w3schools.com/html/
+CSS Basics: https://www.w3schools.com/css/
+GitHub Pages: https://pages.github.com/
+Markdown Guide: https://www.markdownguide.org/
+
+================================================================================
+
+That's it! You now have all the information to customize your academic website.
+Start with the items in the "QUICK EDITS CHECKLIST" section above.
+
+Good luck! 🎓
+
+================================================================================

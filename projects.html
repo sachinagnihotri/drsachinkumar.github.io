@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects - Dr. Sachin Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #004999;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 8px;
+        }
+
+        .project {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #0066cc;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .project-info {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .project-description {
+            color: #555;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .project-highlights {
+            background-color: #fff;
+            padding: 12px;
+            border-left: 3px solid #28a745;
+            margin-top: 12px;
+            border-radius: 3px;
+        }
+
+        .project-highlights strong {
+            color: #28a745;
+        }
+
+        .project-highlights ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .project-highlights li {
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .grant-info {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 3px solid #0066cc;
+            margin-top: 12px;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 13px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+            .nav-bar {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="nav-bar">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#research">RESEARCH</a>
+                <a href="index.html#experience">EXPERIENCE</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="team.html">TEAM</a>
+                <a href="projects.html">PROJECTS</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Research Projects & Grants</h1>
+
+        <!-- Active Projects Section -->
+        <h2>Active Research Projects (2024-2026)</h2>
+
+        <div class="project">
+            <div class="project-title">Lightweight AI for Early Detection of Cognitive Decline</div>
+            <div class="project-info">Project Lead: Dr. Sachin Kumar | Student: Arman Manukyan (MS Thesis)</div>
+            <div class="project-description">
+                Developing efficient, resource-constrained AI models for early-stage cognitive impairment detection using multimodal brain imaging and clinical data. Focus on edge deployment for healthcare IoT devices.
+            </div>
+            <div class="project-highlights">
+                <strong>Key Objectives:</strong>
+                <ul>
+                    <li>Design lightweight neural network architectures for embedded medical devices</li>
+                    <li>Integrate multimodal data from MRI, PET, and clinical assessments</li>
+                    <li>Develop interpretable models for clinical decision support</li>
+                    <li>Validate on real clinical datasets</li>
+                </ul>
+            </div>
+            <div class="grant-info">
+                <strong>Status:</strong> Ongoing | <strong>Expected Outcome:</strong> IEEE Access publication (submitted)
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Transformer-based Multimodal Medical Diagnosis Framework</div>
+            <div class="project-info">Project Lead: Dr. Sachin Kumar | Collaborators: Dr. Sita Saini (Postdoc)</div>
+            <div class="project-description">
+                Developing advanced transformer-based architectures for multimodal medical diagnosis, particularly focusing on tuberculosis classification using heterogeneous medical imaging modalities and clinical records.
+            </div>
+            <div class="project-highlights">
+                <strong>Key Contributions:</strong>
+                <ul>
+                    <li>Novel attention mechanisms for cross-modal fusion</li>
+                    <li>Hierarchical transformer architecture for medical data</li>
+                    <li>Explainability through attention visualization</li>
+                    <li>Multi-center validation across international datasets</li>
+                </ul>
+            </div>
+            <div class="grant-info">
+                <strong>Publications:</strong> Journal of Big Data (2025), Bioengineering (2024)
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Security and Cryptographic Protocols for Internet of Medical Things (IoMT)</div>
+            <div class="project-info">Project Lead: Dr. Sachin Kumar | Researcher: Dr. Anuj Kumar Singh (Postdoc)</div>
+            <div class="project-description">
+                Designing and implementing secure, blockchain-integrated authentication and encryption protocols for wearable medical devices and IoMT ecosystems with focus on privacy preservation and regulatory compliance (HIPAA).
+            </div>
+            <div class="project-highlights">
+                <strong>Research Focus:</strong>
+                <ul>
+                    <li>Lightweight elliptic curve cryptography for resource-constrained devices</li>
+                    <li>Blockchain-based audit trails for medical data</li>
+                    <li>Zero-knowledge proofs for privacy-preserving authentication</li>
+                    <li>Real-world deployment in healthcare networks</li>
+                </ul>
+            </div>
+            <div class="grant-info">
+                <strong>Publications:</strong> Scientific Reports (2025), Expert Systems with Applications (2024)
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Wireless Sensor Networks: Data Compression and Optimization</div>
+            <div class="project-info">Project Lead: Dr. Sachin Kumar | Former Researcher: Dr. Shylashree N. (Postdoc)</div>
+            <div class="project-description">
+                Developing advanced autoencoder-based compression techniques for wireless sensor networks, balancing data fidelity, energy consumption, and reconstruction error for IoT environmental monitoring systems.
+            </div>
+            <div class="project-highlights">
+                <strong>Achievements:</strong>
+                <ul>
+                    <li>Novel combined compression-encryption framework using autoencoders</li>
+                    <li>Dynamic sensor scheduling algorithms</li>
+                    <li>Up to 70% data size reduction with minimal reconstruction error</li>
+                    <li>Energy-efficient sensor cloud systems</li>
+                </ul>
+            </div>
+            <div class="grant-info">
+                <strong>Publications:</strong> Scientific Reports (2025), Wireless Personal Communications (2024)
+            </div>
+        </div>
+
+        <!-- Research Grants -->
+        <h2>Research Grants & Funding</h2>
+
+        <div class="project">
+            <div class="project-title">Regional Research Grant - Russian Science Foundation</div>
+            <div class="project-info">Grant No.: 23-21-10009 | Duration: 2023–2024</div>
+            <div class="project-description">
+                Principal Investigator for regional grant focused on advanced machine learning methodologies for real-world applications.
+            </div>
+            <div class="grant-info">
+                <strong>Grant Amount:</strong> 3 million Russian rubles<br>
+                <strong>Institution:</strong> South Ural State University, Chelyabinsk, Russia<br>
+                <strong>Status:</strong> Completed
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Federal Level Research Grant - Ministry of Science and Education</div>
+            <div class="project-info">Grant No.: FENU-2020-0022 | Duration: 2020–2022</div>
+            <div class="project-description">
+                Co-investigator on federal-level research grant supporting advanced AI/ML research infrastructure and student training.
+            </div>
+            <div class="grant-info">
+                <strong>Grant Amount:</strong> 7 million Russian rubles<br>
+                <strong>Institution:</strong> South Ural State University, Chelyabinsk, Russia<br>
+                <strong>Status:</strong> Completed
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">University Research Grant - National University of Science and Technology</div>
+            <div class="project-info">Grant No.: NUST "MISiS" (K4-2017-052) | Duration: 2017–2018</div>
+            <div class="project-description">
+                Institutional grant supporting research in machine learning and data science applications.
+            </div>
+            <div class="grant-info">
+                <strong>Grant Amount:</strong> 2.1 million Russian rubles<br>
+                <strong>Institution:</strong> National University of Science and Technology (MISiS), Moscow, Russia<br>
+                <strong>Status:</strong> Completed
+            </div>
+        </div>
+
+        <!-- Research Themes -->
+        <h2>Research Themes & Directions</h2>
+
+        <div class="project">
+            <div class="project-title">🔬 Artificial Intelligence for Healthcare</div>
+            <div class="project-description">
+                Developing AI/ML models for disease detection, prognosis, and personalized treatment planning. Focus on interpretability, robustness, and clinical validation.
+            </div>
+            <div class="project-highlights">
+                <strong>Applications:</strong>
+                <ul>
+                    <li>Medical image analysis (CT, MRI, PET, X-ray)</li>
+                    <li>Early disease detection and prevention</li>
+                    <li>Predictive analytics for patient outcomes</li>
+                    <li>Wearable health monitoring systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">🔐 Cybersecurity & Privacy-Preserving Computing</div>
+            <div class="project-description">
+                Research in secure computation, blockchain applications, and privacy-preserving machine learning for sensitive domains like healthcare and finance.
+            </div>
+            <div class="project-highlights">
+                <strong>Research Areas:</strong>
+                <ul>
+                    <li>Federated learning for distributed privacy preservation</li>
+                    <li>Blockchain for data integrity and auditability</li>
+                    <li>Homomorphic encryption for secure computation</li>
+                    <li>Intrusion detection and anomaly analysis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">📊 Emerging Technologies & Innovation</div>
+            <div class="project-description">
+                Exploring next-generation computing paradigms including quantum machine learning, edge computing, and metaverse applications.
+            </div>
+            <div class="project-highlights">
+                <strong>Focus Areas:</strong>
+                <ul>
+                    <li>Quantum machine learning algorithms</li>
+                    <li>Edge AI and IoT integration</li>
+                    <li>Generative AI and multimodal learning</li>
+                    <li>Digital humans and embodied AI</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; padding: 20px; background-color: #e8f4f8; border-radius: 4px;">
+            For collaboration opportunities or inquiries about ongoing projects, please contact:<br>
+            <a href="mailto:s.kumar@aua.am">s.kumar@aua.am</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Sachin Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

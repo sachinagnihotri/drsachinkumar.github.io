@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Dr. Sachin Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #004999;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 8px;
+        }
+
+        .team-member {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+
+        .member-name {
+            font-weight: 600;
+            color: #0066cc;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .member-role {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .member-project {
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .member-outcome {
+            color: #28a745;
+            font-size: 13px;
+        }
+
+        .opening {
+            background-color: #e8f4f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+            border-radius: 4px;
+        }
+
+        .opening h3 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .opening p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 13px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+            .nav-bar {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="nav-bar">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#research">RESEARCH</a>
+                <a href="index.html#experience">EXPERIENCE</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="team.html">TEAM</a>
+                <a href="projects.html">PROJECTS</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Research Team & Supervision</h1>
+
+        <!-- Open Positions -->
+        <div class="opening">
+            <h3>🔍 Open Positions</h3>
+            <p><strong>Position:</strong> Graduate Research Assistants (MS/PhD)</p>
+            <p><strong>Focus Areas:</strong> Multimodal AI, Medical Image Analysis, Quantum Machine Learning, Federated Learning</p>
+            <p><strong>Status:</strong> Actively recruiting motivated students with strong foundation in ML/DL</p>
+            <p>Interested candidates should contact: <strong>s.kumar@aua.am</strong></p>
+        </div>
+
+        <!-- Postdoctoral Fellows -->
+        <h2>Postdoctoral Fellows</h2>
+
+        <div class="team-member">
+            <div class="member-name">Dr. Anuj Kumar Singh</div>
+            <div class="member-role">Postdoctoral Research Fellow</div>
+            <div class="member-project">Project: Security and Cryptographic Protocols for the Internet of Medical Things (IoMT)</div>
+            <div class="member-project">Period: 2024–2025</div>
+            <div class="member-outcome">Outcome: Publications in nature-indexed journals on blockchain-based healthcare security</div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-name">Dr. Sita Saini</div>
+            <div class="member-role">Postdoctoral Research Fellow</div>
+            <div class="member-project">Project: Multimodal Medical Imaging and Analytics Frameworks</div>
+            <div class="member-project">Period: 2023–2025</div>
+            <div class="member-outcome">Outcome: Research on transformer-based diagnostic systems for medical imaging</div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-name">Dr. Shylashree N.</div>
+            <div class="member-role">Former Postdoctoral Research Fellow</div>
+            <div class="member-project">Project: Development of Precise AI/ML Models for Wireless Sensor Networks</div>
+            <div class="member-project">Period: 2022–2024</div>
+            <div class="member-outcome">Outcome: Multiple publications on sensor data compression and optimization using autoencoders</div>
+        </div>
+
+        <!-- Graduate Students -->
+        <h2>Graduate Students (MS/PhD Level)</h2>
+
+        <div class="team-member">
+            <div class="member-name">Arman Manukyan</div>
+            <div class="member-role">MS Thesis Student</div>
+            <div class="member-project">Thesis Topic: Lightweight AI For Early Detection Of Cognitive Decline</div>
+            <div class="member-project">Period: 2025–2026</div>
+            <div class="member-outcome">Outcome: Research manuscript successfully submitted to IEEE Access</div>
+        </div>
+
+        <div class="team-member">
+            <div class="member-name">Arina Pambukyan</div>
+            <div class="member-role">Machine Learning Course Project</div>
+            <div class="member-project">Project: Ergodicity and Regime Recoverability in Finite Markov-Modulated Random Walks</div>
+            <div class="member-project">Period: 2025–2026</div>
+            <div class="member-outcome">Outcome: First-author publication in Scientific Reports (Nature Portfolio) 2026</div>
+        </div>
+
+        <!-- Undergraduate Research -->
+        <h2>Undergraduate Research Supervision</h2>
+
+        <p style="margin-bottom: 20px;">
+            Directly supervised multiple undergraduate research tracks, successfully driving high-potential student thesis projects to publication level across peer-reviewed IEEE and Springer venues. Recent outcomes include:
+        </p>
+
+        <ul style="margin-left: 20px; margin-bottom: 20px;">
+            <li style="margin-bottom: 10px;">
+                <strong>Research Track 1:</strong> Deep learning for medical image segmentation. Resulted in IEEE conference paper.
+            </li>
+            <li style="margin-bottom: 10px;">
+                <strong>Research Track 2:</strong> Natural language processing for healthcare data. Resulted in Springer book chapter.
+            </li>
+            <li style="margin-bottom: 10px;">
+                <strong>Research Track 3:</strong> Time series analysis for financial data prediction. Resulted in indexed journal publication.
+            </li>
+            <li style="margin-bottom: 10px;">
+                <strong>Research Track 4:</strong> Federated learning for privacy-preserving IoT systems. Resulted in top-tier conference submission.
+            </li>
+            <li>
+                <strong>Research Track 5:</strong> Quantum machine learning applications. Currently in review at quantum computing venues.
+            </li>
+        </ul>
+
+        <!-- Research Culture -->
+        <h2>Research Environment & Philosophy</h2>
+
+        <p>
+            My research group focuses on creating an inclusive, collaborative, and intellectually stimulating environment where:
+        </p>
+
+        <ul style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px;">
+            <li style="margin-bottom: 10px;"><strong>Excellence is Pursued:</strong> We aim for high-quality research published in top-tier venues (Nature, IEEE, Springer, etc.)</li>
+            <li style="margin-bottom: 10px;"><strong>Innovation is Encouraged:</strong> Novel ideas are welcomed; failure is seen as a learning opportunity</li>
+            <li style="margin-bottom: 10px;"><strong>Mentorship is Prioritized:</strong> Personalized guidance for career development and research skills</li>
+            <li style="margin-bottom: 10px;"><strong>Collaboration is Valued:</strong> Both internal team collaborations and external partnerships with international institutions</li>
+            <li><strong>Communication Matters:</strong> Regular group meetings, paper discussions, and feedback sessions</li>
+        </ul>
+
+        <!-- Collaboration Opportunities -->
+        <h2>Collaboration & Partnerships</h2>
+
+        <p style="margin-bottom: 15px;">
+            We actively seek collaborations with researchers and institutions interested in:
+        </p>
+
+        <ul style="margin-left: 20px; margin-bottom: 20px;">
+            <li>Artificial Intelligence and Machine Learning applications</li>
+            <li>Healthcare AI and medical informatics</li>
+            <li>Cybersecurity and blockchain technologies</li>
+            <li>Internet of Things (IoT) and sensor networks</li>
+            <li>Quantum computing and emerging technologies</li>
+            <li>Data science and business analytics</li>
+        </ul>
+
+        <p style="background-color: #f0f0f0; padding: 15px; border-radius: 4px; margin-top: 30px;">
+            For collaboration inquiries, graduate student admissions, or postdoctoral opportunities, please contact:<br>
+            <strong>Dr. Sachin Kumar</strong><br>
+            Email: <a href="mailto:s.kumar@aua.am">s.kumar@aua.am</a><br>
+            Office: 334W/PAB, American University of Armenia, Yerevan
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dr. Sachin Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

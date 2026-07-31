@@ -15,246 +15,250 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background-color: #f5f5f5;
         }
 
-        /* Header & Navigation */
-        header {
-            background-color: #fff;
-            padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        /* Header - Blue Background */
+        .header {
+            background: linear-gradient(135deg, #1e5a96 0%, #2a7bc4 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
         }
 
         .header-content {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        .nav-bar {
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 30px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .title-info {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .title-info strong {
+            color: #ffc107;
+            font-weight: 600;
+        }
+
+        .contact-header {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .social-links-header {
             display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 25px;
             justify-content: center;
+            font-size: 14px;
             margin-top: 15px;
         }
 
-        .nav-bar a {
+        .social-links-header a {
+            color: white;
             text-decoration: none;
-            color: #0066cc;
-            font-weight: 500;
-            font-size: 14px;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 5px;
         }
 
-        .nav-bar a:hover {
-            color: #004999;
+        .social-links-header a:hover {
+            border-bottom: 2px solid #ffc107;
+            color: #ffc107;
         }
 
-        /* Main Content */
-        main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
+        /* Navigation Bar - Yellow */
+        .navbar {
+            background-color: #ffc107;
+            padding: 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Profile Section */
-        .profile-section {
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
-            gap: 40px;
-            margin-bottom: 40px;
-            align-items: flex-start;
+            justify-content: center;
         }
 
-        .profile-image {
-            flex-shrink: 0;
-        }
-
-        .profile-image img {
-            width: 180px;
-            height: 180px;
-            border-radius: 8px;
-            object-fit: cover;
-            border: 1px solid #e0e0e0;
-        }
-
-        .profile-info h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #1a1a1a;
-        }
-
-        .profile-info .title {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-
-        .profile-info .affiliation {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            font-size: 13px;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .contact-info strong {
-            display: block;
-            color: #333;
-            margin-top: 10px;
-        }
-
-        .links {
-            margin-top: 20px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .links a {
-            color: #0066cc;
+        .navbar a {
+            color: #1e5a96;
             text-decoration: none;
+            padding: 18px 25px;
+            font-weight: 600;
             font-size: 14px;
-            border: 1px solid #0066cc;
-            padding: 6px 12px;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(30, 90, 150, 0.1);
+            border-bottom: 3px solid #1e5a96;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            background-color: #e8e8e8;
+            padding: 20px;
+            border-radius: 6px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            padding: 8px 12px;
             border-radius: 4px;
             transition: all 0.3s;
         }
 
-        .links a:hover {
-            background-color: #0066cc;
-            color: white;
+        .sidebar a:hover {
+            background-color: #d0d0d0;
+            color: #1e5a96;
+            font-weight: 600;
         }
 
-        /* Table of Contents */
-        .toc {
-            background-color: #f8f9fa;
-            padding: 20px;
+        /* Main Content */
+        .main-content {
+            background-color: white;
+            padding: 40px;
             border-radius: 6px;
-            margin: 30px 0;
-            border-left: 4px solid #0066cc;
-        }
-
-        .toc h3 {
-            margin-bottom: 12px;
-            color: #1a1a1a;
-        }
-
-        .toc ul {
-            list-style: none;
-            columns: 2;
-            gap: 30px;
-        }
-
-        .toc li {
-            margin-bottom: 8px;
-        }
-
-        .toc a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .toc a:hover {
-            text-decoration: underline;
-        }
-
-        /* Section Styles */
-        section {
-            margin: 40px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 28px;
             margin-bottom: 20px;
-            color: #1a1a1a;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 10px;
+            color: #1e5a96;
+            border-bottom: 3px solid #ffc107;
+            padding-bottom: 12px;
+            font-weight: 400;
         }
 
         h3 {
             font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 12px;
-            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #1e5a96;
             font-weight: 600;
         }
 
         p {
             margin-bottom: 15px;
             text-align: justify;
-            line-height: 1.7;
+            line-height: 1.8;
+            color: #444;
         }
 
         /* Lists */
         ul, ol {
-            margin-left: 20px;
+            margin-left: 30px;
             margin-bottom: 15px;
         }
 
         li {
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-
-        /* Experience, Education, etc. */
-        .experience-item, .award-item, .course-item {
-            margin-bottom: 20px;
-            border-left: 3px solid #0066cc;
-            padding-left: 20px;
-        }
-
-        .experience-item strong, .award-item strong, .course-item strong {
-            color: #1a1a1a;
-            display: block;
-        }
-
-        .experience-item .position, .award-item .title, .course-item .title {
-            color: #0066cc;
-            font-weight: 600;
-        }
-
-        .experience-item .period, .award-item .period, .course-item .period {
-            color: #666;
-            font-size: 13px;
-            margin-top: 4px;
-        }
-
-        .experience-item .institution, .award-item .institution, .course-item .institution {
-            color: #666;
-            font-size: 14px;
-            margin-top: 4px;
+            margin-bottom: 10px;
+            line-height: 1.7;
+            color: #444;
         }
 
         /* News Section */
         .news-item {
-            border-left: 3px solid #28a745;
+            margin-bottom: 18px;
             padding-left: 20px;
-            margin-bottom: 15px;
+            border-left: 3px solid #ffc107;
         }
 
-        .news-item .news-date {
-            color: #28a745;
-            font-weight: 600;
-            font-size: 13px;
+        .news-date {
+            color: #1e5a96;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
         }
 
-        .news-item p {
+        .news-text {
+            color: #d9534f;
+            font-size: 14px;
             margin-top: 5px;
-            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* Experience Item */
+        .experience-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .position-title {
+            font-weight: 600;
+            color: #1e5a96;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .period {
+            color: #999;
+            font-size: 13px;
         }
 
         /* Footer */
@@ -262,380 +266,296 @@
             text-align: center;
             padding: 30px;
             color: #666;
-            font-size: 13px;
+            font-size: 12px;
             border-top: 1px solid #e0e0e0;
             margin-top: 60px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .profile-section {
-                flex-direction: column;
-                gap: 20px;
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
             }
 
-            main {
+            .sidebar {
+                position: static;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .navbar-content {
+                flex-wrap: wrap;
+            }
+
+            .navbar a {
+                padding: 15px 15px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .title-info {
+                font-size: 14px;
+            }
+
+            .main-content {
                 padding: 20px;
             }
 
-            .nav-bar {
-                gap: 15px;
-            }
-
-            .toc ul {
-                columns: 1;
-            }
-
-            h2 {
-                font-size: 18px;
+            .sidebar {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
-    <header>
+    <!-- Header with Profile -->
+    <div class="header">
         <div class="header-content">
-            <div class="nav-bar">
-                <a href="#home">HOME</a>
-                <a href="#research">RESEARCH</a>
-                <a href="#experience">EXPERIENCE</a>
-                <a href="#education">EDUCATION</a>
-                <a href="#publications">PUBLICATIONS</a>
-                <a href="#awards">AWARDS</a>
-                <a href="#professional">PROFESSIONAL ACTIVITIES</a>
+            <img src="profile.png" alt="Dr. Sachin Kumar" class="profile-photo">
+            <h1>Dr. Sachin Kumar</h1>
+            <div class="title-info">
+                <div><strong>IEEE Senior Member</strong></div>
+                <div>Associate Professor, Computer Science</div>
+                <div><strong>Akian College of Science and Engineering</strong></div>
+                <div>American University of Armenia, Yerevan, Armenia</div>
+            </div>
+            <div class="contact-header">
+                Email: s.kumar@aua.am
+            </div>
+            <div class="social-links-header">
+                <a href="https://scholar.google.co.in/citations?user=FtQHB6kAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57199513131" target="_blank">Scopus</a>
+                <a href="https://www.linkedin.com/in/dr-sachin-kumar-2150a461" target="_blank">LinkedIn</a>
+                <a href="https://people.aua.am/team_member/sachin-kumar-phd/" target="_blank">AUA Profile</a>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <!-- Profile Section -->
-        <section id="home" class="profile-section">
-            <div class="profile-image">
-                <img src="profile.jpg" alt="Dr. Sachin Kumar">
-            </div>
-            <div class="profile-info">
-                <h1>Dr. Sachin Kumar</h1>
-                <div class="title">
-                    Associate Professor<br>
-                    Computer Science<br>
-                    <strong style="color: #0066cc;">Akian College of Science and Engineering</strong>
-                </div>
-                <div class="affiliation">
-                    American University of Armenia<br>
-                    Yerevan, Armenia
-                </div>
-                <div class="contact-info">
-                    <strong>Contact:</strong>
-                    Office: 334W/PAB<br>
-                    40 Marshal Baghramyan, Yerevan, 0019<br>
-                    Tel: +374 55254128<br>
-                    Email: s.kumar@aua.am
-                </div>
-                <div class="links">
-                    <a href="https://scholar.google.co.in/citations?user=FtQHB6kAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57199513131" target="_blank">Scopus</a>
-                    <a href="https://www.linkedin.com/in/dr-sachin-kumar-2150a461" target="_blank">LinkedIn</a>
-                    <a href="https://people.aua.am/team_member/sachin-kumar-phd/" target="_blank">AUA Profile</a>
-                </div>
-            </div>
-        </section>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-content">
+            <a href="#home">HOME</a>
+            <a href="team.html">TEAM MEMBERS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="publications.html">PUBLICATIONS</a>
+            <a href="#courses">COURSES</a>
+            <a href="#professional">PROFESSIONAL ACTIVITIES</a>
+        </div>
+    </div>
 
-        <!-- Table of Contents -->
-        <div class="toc">
-            <h3>Quick Navigation</h3>
+    <!-- Main Container with Sidebar -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Quick Links</h3>
             <ul>
                 <li><a href="#short-bio">Short Bio</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#research">Research Interests</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#courses">Courses</a></li>
                 <li><a href="#awards">Awards & Honors</a></li>
                 <li><a href="#professional">Professional Activities</a></li>
             </ul>
         </div>
 
-        <!-- Short Bio -->
-        <section id="short-bio">
-            <h2>Short Bio</h2>
-            <p>
-                Dr. Sachin Kumar is an Associate Professor in the Computer Science Department at the Akian College of Science and Engineering, American University of Armenia, since July 2024. He holds a Ph.D. in Data Mining from Indian Institute of Technology Roorkee (2017) and has extensive research experience spanning machine learning, artificial intelligence, healthcare informatics, and cybersecurity.
-            </p>
-            <p>
-                With an H-index of 42 (Google Scholar) and over 60 peer-reviewed publications, Dr. Kumar is recognized as a highly cited researcher, ranking in the top 2% worldwide in 2023-2025 (Stanford University). His research has been supported by multiple research grants including the Russian Science Foundation and Ministry of Science and Education Russian Federation.
-            </p>
-            <p>
-                Dr. Kumar specializes in Business Analytics, Financial Data Analysis, Smart Healthcare, Cognitive Science, Quantum Machine Learning, and Multimodal Medical Diagnosis. He has supervised postdoctoral fellows, graduate students, and undergraduate researchers, with several students' work published in top-tier venues including Nature Scientific Reports, IEEE, and Springer.
-            </p>
-        </section>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Short Bio -->
+            <section id="short-bio">
+                <h2>Short Bio</h2>
+                <p>
+                    Dr. Sachin Kumar is an Associate Professor in the Computer Science Department at the Akian College of Science and Engineering, American University of Armenia, since July 2024. He holds a Ph.D. in Data Mining from Indian Institute of Technology Roorkee (2017) and has extensive research experience spanning machine learning, artificial intelligence, healthcare informatics, and cybersecurity.
+                </p>
+                <p>
+                    With an H-index of 42 (Google Scholar) and over 60 peer-reviewed publications, Dr. Kumar is recognized as a highly cited researcher, ranking in the top 2% worldwide in 2023-2025 (Stanford University). His research has been supported by multiple research grants including the Russian Science Foundation and Ministry of Science and Education Russian Federation.
+                </p>
+                <p>
+                    Dr. Kumar specializes in Business Analytics, Financial Data Analysis, Smart Healthcare, Cognitive Science, Quantum Machine Learning, and Multimodal Medical Diagnosis. He has supervised postdoctoral fellows, graduate students, and undergraduate researchers, with several students' work published in top-tier venues including Nature Scientific Reports, IEEE, and Springer.
+                </p>
+            </section>
 
-        <!-- News -->
-        <section id="news">
-            <h2>News</h2>
-            <div class="news-item">
-                <div class="news-date">Feb 2026</div>
-                <p>Appointed Vice Chair, IEEE Armenia Sub-Section</p>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Mar 2026</div>
-                <p>Joined as Academic Editor (IET Computers & Digital Techniques, Wiley) and Associate Editor (Communications AI & Computing, Nature)</p>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Jan 2026</div>
-                <p>Several publications accepted in Nature Scientific Reports and MDPI journals on quantum computing, multimodal learning, and AI applications</p>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2024</div>
-                <p>Joined American University of Armenia as Associate Professor and active member of Faculty Senate and Ethics Committee</p>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Dec 2023</div>
-                <p>Listed in the top 2% highly cited researchers by Stanford University (2023)</p>
-            </div>
-        </section>
+            <!-- News -->
+            <section id="news">
+                <h2>News</h2>
+                <div class="news-item">
+                    <div class="news-date">Feb 2026</div>
+                    <div class="news-text">Appointed Vice Chair, IEEE Armenia Sub-Section</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Mar 2026</div>
+                    <div class="news-text">Joined as Academic Editor (IET Computers & Digital Techniques, Wiley) and Associate Editor (Communications AI & Computing, Nature)</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2026</div>
+                    <div class="news-text">Several publications accepted in Nature Scientific Reports and MDPI journals on quantum computing, multimodal learning, and AI applications</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Sep 2024</div>
+                    <div class="news-text">Joined American University of Armenia as Associate Professor and active member of Faculty Senate and Ethics Committee</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Dec 2023</div>
+                    <div class="news-text">Listed in the top 2% highly cited researchers by Stanford University (2023)</div>
+                </div>
+            </section>
 
-        <!-- Research Interests -->
-        <section id="research">
-            <h2>Research Interests</h2>
-            <ul>
-                <li><strong>Artificial Intelligence & Machine Learning:</strong> Deep learning, neural networks, transformer models, and their applications</li>
-                <li><strong>Generative AI:</strong> Image generation, video synthesis, and multimodal learning systems</li>
-                <li><strong>Healthcare AI:</strong> Smart healthcare systems, medical imaging, disease detection and classification, multimodal diagnosis</li>
-                <li><strong>Security & Cryptography:</strong> IoMT security, blockchain applications, secure communication protocols</li>
-                <li><strong>Data Science:</strong> Business analytics, financial forecasting, time series analysis</li>
-                <li><strong>Emerging Technologies:</strong> Quantum machine learning, edge computing, federated learning</li>
-                <li><strong>Cognitive Science:</strong> Early detection of cognitive decline, brain imaging analysis</li>
-            </ul>
-        </section>
+            <!-- Research Interests -->
+            <section id="research">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li><strong>Artificial Intelligence & Machine Learning:</strong> Deep learning, neural networks, transformer models, and their applications</li>
+                    <li><strong>Generative AI:</strong> Image generation, video synthesis, and multimodal learning systems</li>
+                    <li><strong>Healthcare AI:</strong> Smart healthcare systems, medical imaging, disease detection and classification, multimodal diagnosis</li>
+                    <li><strong>Security & Cryptography:</strong> IoMT security, blockchain applications, secure communication protocols</li>
+                    <li><strong>Data Science:</strong> Business analytics, financial forecasting, time series analysis</li>
+                    <li><strong>Emerging Technologies:</strong> Quantum machine learning, edge computing, federated learning</li>
+                    <li><strong>Cognitive Science:</strong> Early detection of cognitive decline, brain imaging analysis</li>
+                </ul>
+            </section>
 
-        <!-- Employment -->
-        <section id="experience">
-            <h2>Academic & Professional Experience</h2>
-            
-            <div class="experience-item">
-                <div class="position">Associate Professor, Computer Science</div>
-                <div class="institution">Akian College of Science and Engineering, American University of Armenia</div>
-                <div class="period">July 2024 – Present</div>
-            </div>
+            <!-- Employment -->
+            <section id="experience">
+                <h2>Employment</h2>
+                
+                <div class="experience-item">
+                    <div class="position-title">Associate Professor, Computer Science</div>
+                    <div class="institution">Akian College of Science and Engineering, American University of Armenia</div>
+                    <div class="period">July 2024 – Present</div>
+                </div>
 
-            <div class="experience-item">
-                <div class="position">Leading Researcher, Big Data & Machine Learning Lab</div>
-                <div class="institution">South Ural State University (National Research University), Chelyabinsk, Russia</div>
-                <div class="period">March 2024 – June 2024</div>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Leading Researcher, Big Data & Machine Learning Lab</div>
+                    <div class="institution">South Ural State University (National Research University), Chelyabinsk, Russia</div>
+                    <div class="period">March 2024 – June 2024</div>
+                </div>
 
-            <div class="experience-item">
-                <div class="position">Senior Research Fellow</div>
-                <div class="institution">Department of System Programming, South Ural State University</div>
-                <div class="period">March 2019 – March 2024</div>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Senior Research Fellow</div>
+                    <div class="institution">Department of System Programming, South Ural State University</div>
+                    <div class="period">March 2019 – March 2024</div>
+                </div>
 
-            <div class="experience-item">
-                <div class="position">Head, Data Mining and Virtualization Lab</div>
-                <div class="institution">South Ural State University</div>
-                <div class="period">September 2021 – August 2022</div>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Senior Lecturer and Post-Doctoral Researcher</div>
+                    <div class="institution">College of IBS, National University of Science and Technology (MISiS), Moscow, Russia</div>
+                    <div class="period">December 2017 – February 2019</div>
+                </div>
+            </section>
 
-            <div class="experience-item">
-                <div class="position">Senior Lecturer and Post-Doctoral Researcher</div>
-                <div class="institution">College of IBS, National University of Science and Technology (MISiS), Moscow, Russia</div>
-                <div class="period">December 2017 – February 2019</div>
-            </div>
+            <!-- Education -->
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="experience-item">
+                    <div class="position-title">Doctor of Philosophy (Ph.D.) in Data Mining</div>
+                    <div class="institution">Indian Institute of Technology Roorkee, Uttarakhand, India</div>
+                    <div class="period">January 2014 – September 2017</div>
+                </div>
 
-            <div class="experience-item">
-                <div class="position">Assistant Professor, Computer Science Department</div>
-                <div class="institution">Graphic Era University, Dehradun, India</div>
-                <div class="period">June 2017 – November 2017</div>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Master of Technology (M.Tech-CSE)</div>
+                    <div class="institution">Shobhit University, Meerut, UP, India</div>
+                    <div class="period">2012 | CGPA: 8.65</div>
+                </div>
 
-            <p style="margin-top: 20px; font-style: italic; color: #666;">
-                Plus multiple positions as Junior Research Fellow, Assistant Professor, Senior Lecturer, and Lecturer at various institutions (2008-2017)
-            </p>
-        </section>
+                <div class="experience-item">
+                    <div class="position-title">Bachelor of Technology (B.Tech-CSE)</div>
+                    <div class="institution">Uttar Pradesh Technical University, Lucknow, India</div>
+                    <div class="period">2008 | Percentage: 73.4%</div>
+                </div>
+            </section>
 
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-            
-            <div class="experience-item">
-                <div class="position">Doctor of Philosophy (Ph.D.) in Data Mining</div>
-                <div class="institution">Indian Institute of Technology Roorkee, Uttarakhand, India</div>
-                <div class="period">January 2014 – September 2017</div>
-            </div>
+            <!-- Courses -->
+            <section id="courses">
+                <h2>Courses Taught & Developed</h2>
+                <p>Designed and delivered comprehensive courses with syllabus, assignments, and project-based evaluation incorporating supervised research leading to student publications in peer-reviewed venues.</p>
+                
+                <h3>Machine Learning / Deep Learning / Neural Networks (BS/MS)</h3>
+                <p>Full course design with emphasis on practical applications and student research integration at American University of Armenia.</p>
 
-            <div class="experience-item">
-                <div class="position">Master of Technology (M.Tech-CSE)</div>
-                <div class="institution">Shobhit University, Meerut, UP, India</div>
-                <div class="period">2012 | CGPA: 8.65</div>
-            </div>
+                <h3>Natural Language Processing (BS)</h3>
+                <p>Comprehensive coverage of NLP techniques, transformers, and language models.</p>
 
-            <div class="experience-item">
-                <div class="position">Bachelor of Technology (B.Tech-CSE)</div>
-                <div class="institution">Uttar Pradesh Technical University, Lucknow, India</div>
-                <div class="period">2008 | Percentage: 73.4%</div>
-            </div>
-        </section>
+                <h3>Time Series Analysis and Forecasting (BS/MS)</h3>
+                <p>Advanced methods in temporal data analysis with applications in finance and healthcare.</p>
 
-        <!-- Courses -->
-        <section id="courses">
-            <h2>Courses Taught & Developed</h2>
-            <p>Designed and delivered comprehensive courses with syllabus, assignments, and project-based evaluation, many incorporating supervised research leading to student publications in peer-reviewed venues.</p>
-            
-            <div class="course-item">
-                <div class="title">Machine Learning / Deep Learning / Neural Networks</div>
-                <div class="institution">BS/MS Level | American University of Armenia</div>
-                <p style="margin-top: 8px; margin-bottom: 0;">Full course design with emphasis on practical applications and student research integration.</p>
-            </div>
+                <h3>Data Structures and Algorithms, Theory of Computation, Operating Systems (BS)</h3>
+                <p>Core computer science courses with emphasis on practical applications.</p>
+            </section>
 
-            <div class="course-item">
-                <div class="title">Natural Language Processing</div>
-                <div class="institution">BS Level | American University of Armenia</div>
-                <p style="margin-top: 8px; margin-bottom: 0;">Comprehensive coverage of NLP techniques, transformers, and language models.</p>
-            </div>
+            <!-- Awards -->
+            <section id="awards">
+                <h2>Awards & Recognition</h2>
+                
+                <div class="experience-item">
+                    <div class="position-title">Top 2% Highly Cited Researchers</div>
+                    <div class="institution">Stanford University</div>
+                    <div class="period">2023, 2024, 2025</div>
+                </div>
 
-            <div class="course-item">
-                <div class="title">Time Series Analysis and Forecasting</div>
-                <div class="institution">BS/MS Level | American University of Armenia</div>
-                <p style="margin-top: 8px; margin-bottom: 0;">Advanced methods in temporal data analysis with applications in finance and healthcare.</p>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Best Employee Award (Science Category)</div>
+                    <div class="institution">South Ural State University, Chelyabinsk, Russia</div>
+                    <div class="period">December 2022</div>
+                </div>
 
-            <div class="course-item">
-                <div class="title">Data Structures and Algorithms, Theory of Computation, Operating Systems</div>
-                <div class="institution">BS Level</div>
-            </div>
-        </section>
+                <div class="experience-item">
+                    <div class="position-title">IEEE Senior Member</div>
+                    <div class="period">Current</div>
+                </div>
 
-        <!-- Awards and Honors -->
-        <section id="awards">
-            <h2>Awards & Recognition</h2>
-            
-            <div class="award-item">
-                <div class="title">Top 2% Highly Cited Researchers</div>
-                <div class="institution">Stanford University</div>
-                <div class="period">2023, 2024, 2025</div>
-            </div>
+                <div class="experience-item">
+                    <div class="position-title">Young Scientists Award</div>
+                    <div class="institution">NUST MISiS, Moscow, Russia</div>
+                    <div class="period">2017–2018</div>
+                </div>
+            </section>
 
-            <div class="award-item">
-                <div class="title">Best Employee Award (Science Category)</div>
-                <div class="institution">South Ural State University, Chelyabinsk, Russia</div>
-                <div class="period">December 2022</div>
-            </div>
+            <!-- Professional Activities -->
+            <section id="professional">
+                <h2>Professional Activities</h2>
 
-            <div class="award-item">
-                <div class="title">IEEE Senior Member</div>
-                <div class="period">Current</div>
-            </div>
+                <h3>Editorial Roles</h3>
+                <ul>
+                    <li><strong>Academic Editor:</strong> IET Computers & Digital Techniques, Wiley (Mar 2026 onwards)</li>
+                    <li><strong>Associate Editor:</strong> Communications AI & Computing, Nature (Mar 2026 onwards)</li>
+                    <li><strong>Associate Editor:</strong> IET Biometrics, Wiley (Mar 2026 onwards)</li>
+                    <li><strong>Associate Editor:</strong> Heliyon journal, Cell Press (Jan 2024 onwards)</li>
+                </ul>
 
-            <div class="award-item">
-                <div class="title">Young Scientists Award</div>
-                <div class="institution">NUST MISiS, Moscow, Russia</div>
-                <div class="period">2017–2018</div>
-            </div>
+                <h3>Academic Service</h3>
+                <ul>
+                    <li><strong>Vice Chair:</strong> IEEE Armenia Sub-Section (Feb 2026 onwards)</li>
+                    <li><strong>Member:</strong> Faculty Senate, American University of Armenia (Sep 2024 onwards)</li>
+                    <li><strong>Member:</strong> Ethics and Grievance Committee, American University of Armenia (Sep 2024 onwards)</li>
+                    <li>Recognized reviewer for top-tier journals: Springer, Elsevier, IEEE, ACM, Taylor and Francis (Since 2015)</li>
+                </ul>
 
-            <div class="award-item">
-                <div class="title">MHRD Fellowship Award</div>
-                <div class="institution">IIT Roorkee, India (PhD Program)</div>
-                <div class="period">2014–2017</div>
-            </div>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Proficient)</li>
+                    <li>Russian (Intermediate)</li>
+                    <li>Hindi (Native)</li>
+                </ul>
+            </section>
 
-            <h3 style="margin-top: 25px;">Research Supervision & Leadership</h3>
-            
-            <h4 style="margin-top: 15px; color: #0066cc;">Postdoctoral Supervision</h4>
-            <ul>
-                <li><strong>Dr. Shylashree N.</strong> (2022–2024): AI/ML Models for Wireless Sensor Networks</li>
-                <li><strong>Dr. Anuj Kumar Singh</strong> (2024–2025): Security and Cryptographic Protocols for IoMT</li>
-                <li><strong>Dr. Sita Saini</strong> (2023–2025): Multimodal Medical Imaging and Analytics</li>
-            </ul>
-
-            <h4 style="margin-top: 15px; color: #0066cc;">Graduate & Postgraduate Supervision</h4>
-            <ul>
-                <li><strong>Arman Manukyan</strong> (MS Thesis, 2026): Lightweight AI for Early Detection of Cognitive Decline</li>
-                <li><strong>Arina Pambukyan</strong> (ML Course Project, 2026): Resulted in first-author publication in Nature Scientific Reports</li>
-                <li>Multiple undergraduate research projects with publication outcomes in IEEE and Springer venues</li>
-            </ul>
-        </section>
-
-        <!-- Professional Activities -->
-        <section id="professional">
-            <h2>Professional Activities</h2>
-
-            <h3>Editorial Roles</h3>
-            <ul>
-                <li><strong>Academic Editor:</strong> IET Computers & Digital Techniques, Wiley (Mar 2026 onwards)</li>
-                <li><strong>Associate Editor:</strong> Communications AI & Computing, Nature (Mar 2026 onwards)</li>
-                <li><strong>Associate Editor:</strong> IET Biometrics, Wiley (Mar 2026 onwards)</li>
-                <li><strong>Associate Editor:</strong> Heliyon journal, Cell Press (Jan 2024 onwards)</li>
-                <li><strong>Associate Editor:</strong> Systems and Computing (SyCom) (Jun 2025 onwards)</li>
-                <li><strong>Editorial Board Member:</strong> Biomedical Signal Processing and Control, Elsevier (Jan 2024 onwards)</li>
-                <li><strong>Editorial Board Member:</strong> Data Science and Technologies, Emerald Publishers (Nov 2025 onwards)</li>
-            </ul>
-
-            <h3>Academic Service</h3>
-            <ul>
-                <li><strong>Vice Chair:</strong> IEEE Armenia Sub-Section (Feb 2026 onwards)</li>
-                <li><strong>Member:</strong> Faculty Senate, American University of Armenia (Sep 2024 onwards)</li>
-                <li><strong>Member:</strong> Ethics and Grievance Committee, American University of Armenia (Sep 2024 onwards)</li>
-                <li><strong>Member:</strong> Extension Program Committee, American University of Armenia (Sep 2024 onwards)</li>
-                <li>Recognized reviewer for top-tier journals: Springer, Elsevier, IEEE, ACM, Taylor and Francis (Since 2015)</li>
-            </ul>
-
-            <h3>Keynote Talks & Workshop Leadership</h3>
-            <ul>
-                <li>Invited talk at "Solving Nature's Mysteries using Advanced Bioimaging Approaches", Yerevan, Armenia (Nov 2024)</li>
-                <li>Invited Keynote Speaker at 4th International Conference, GIET University, Gunupur, Odisha, India (March 2024)</li>
-                <li>Invited Keynote Speaker at 6th International Conference on Engineering Technology, The Islamic University, Najaf, Iraq (May 2023)</li>
-                <li>Expert talk in FDP workshop, NIT Jalandhar, India (April 2023)</li>
-                <li>Session Chair at ICCCIS-2022, Sharda University, U.P., India (Nov 2022)</li>
-                <li>Multiple workshops on AI, Deep Learning, and Emerging Technologies (2020)</li>
-            </ul>
-
-            <h3>Edited Books Published</h3>
-            <ul>
-                <li><strong>Security, Privacy, and Trust in WBANs and E-Healthcare</strong>, CRC Press, Taylor and Francis, 2024</li>
-                <li><strong>AI-Driven Digital Twin and Industry 4.0:</strong> A Conceptual Framework with Applications, CRC Press, Taylor and Francis, 2024</li>
-                <li><strong>Computational Intelligence for Managing Pandemics</strong>, De Gruyter, 2021</li>
-            </ul>
-
-            <h3>Languages</h3>
-            <ul>
-                <li>English (Proficient)</li>
-                <li>Russian (Intermediate)</li>
-                <li>Hindi (Native)</li>
-            </ul>
-        </section>
-
-        <!-- Featured Publications Section -->
-        <section id="publications">
-            <h2>Selected Recent Publications</h2>
-            <p>Over 60 peer-reviewed publications in top-tier journals and conferences. Selected recent works:</p>
-            
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 15px; padding-left: 0;">
-                    <strong>2026:</strong> Pambukyan, A., Saudagar, A.K.J. & Kumar, S. "Ergodicity and regime recoverability in finite Markov-modulated random walks." <em>Scientific Reports</em> (Nature Portfolio). 
-                </li>
-                <li style="margin-bottom: 15px; padding-left: 0;">
-                    <strong>2026:</strong> Kumar, S.; Mikayelyan, A.; Vorfolomeyeva, O. "Fluency Illusion: A Review on Influence of ChatGPT in Classroom Settings." <em>Information</em> MDPI.
-                </li>
-                <li style="margin-bottom: 15px; padding-left: 0;">
-                    <strong>2025:</strong> Kumar, S.; Sharma, S. & Megra, K.T. "Transformer enabled multi-modal medical diagnosis for tuberculosis classification." <em>Journal of Big Data</em>.
-                </li>
-                <li style="margin-bottom: 15px; padding-left: 0;">
-                    <strong>2025:</strong> Grigoryan, E.; Kumar, S.; Pinheiro, P.R. "A Review on Models and Applications of Quantum Computing." <em>Quantum Reports</em>.
-                </li>
-                <li style="margin-bottom: 15px; padding-left: 0;">
-                    <strong>2024:</strong> Kumar, S.; Sharma, S. "An Improved Deep Learning Framework for Multimodal Medical Data Analysis." <em>Big Data and Cognitive Computing</em>.
-                </li>
-            </ul>
-            
-            <p style="margin-top: 20px; font-style: italic;">
-                For a complete list of publications, visit <a href="https://scholar.google.co.in/citations?user=FtQHB6kAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.scopus.com/authid/detail.uri?authorId=57199513131" target="_blank">Scopus profile</a>.
-            </p>
-        </section>
-
-    </main>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Dr. Sachin Kumar. All rights reserved. | Last updated: March 2025</p>
+        <p>&copy; 2025 Dr. Sachin Kumar. All rights reserved.</p>
     </footer>
 </body>
 </html>
